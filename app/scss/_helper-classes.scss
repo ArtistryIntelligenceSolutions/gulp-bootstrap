@@ -1,0 +1,135 @@
+// Colors
+.background-primary {
+  background-color: $primary;
+}
+
+.background-secondary {
+  background-color: $secondary;
+}
+
+.background-off-white {
+  background-color: $offWhite;
+}
+
+.border-color-primary {
+  border-color: $primary;
+}
+
+.border-color-secondary {
+  border-color: $secondary;
+}
+
+.font-color-primary {
+  color: $primary;
+}
+
+.font-color-secondary {
+  color: $secondary;
+}
+
+.container,
+.container-fluid {
+  .background-primary {
+    background-color: $primary;
+  }
+
+  .background-secondary {
+    background-color: $primary;
+  }
+
+  .background-off-white {
+    background-color: $offWhite;
+  }
+
+  .border-color-primary {
+    border-color: $primary;
+  }
+
+  .border-color-secondary {
+    border-color: $secondary;
+  }
+
+  .font-color-primary {
+    color: $primary;
+  }
+
+  .font-color-secondary {
+    color: $secondary;
+  }
+}
+
+//Active States
+.container,
+.container-fluid {
+  .active {
+    color: $primary;
+  }
+}
+
+// Remove Padding
+@mixin no-padding($paddingDirection) {
+  @if $paddingDirection==padding-bottom {
+    padding-bottom: 0;
+  }
+
+  @else if $paddingDirection==padding-left {
+    padding-left: 0;
+  }
+
+  @else if $paddingDirection==padding-right {
+    padding-right: 0;
+  }
+
+  @else if $paddingDirection==padding-top {
+    padding-top: 0;
+  }
+}
+
+// Calling Method
+// .#{$overRideSelectors} {
+//   .no-padding {
+//     @include no-padding(padding-bottom);
+//   }
+// }
+
+// Remove Margin
+@mixin no-gutter($marginDirection) {
+  @if $marginDirection==margin-bottom {
+    margin-bottom: 0;
+  }
+
+  @else if $marginDirection==margin-left {
+    margin-left: 0;
+  }
+
+  @else if $marginDirection==margin-right {
+    margin-right: 0;
+  }
+
+  @else if $marginDirection==margin-top {
+    margin-top: 0;
+  }
+}
+
+// Calling Method
+// .#{$overRideSelectors} {
+//   .no-gutter {
+//     @include gutterIf(margin-bottom);
+//   }
+// }
+
+.container,
+.container-fluid {
+  .no-border-radius {
+    border-radius: 0;
+  }
+}
+
+.no-border-radius {
+  border-radius: 0;
+}
+
+// Paddings
+.padding-sm {
+  padding: $paddingSm;
+}

@@ -1,4 +1,4 @@
 function ts(param) {
-    alert(param);
+    console.log(param);
 }
-ts("it's working!!!!");
+ts("typescript is running");

@@ -1,4 +1,22 @@
-// styles.scss
-body {
-    background:blue;
-}
+// SCSS Specific
+@import "./my-variables";
+@import "./helper-classes";
+@import "./my-mixins";
+
+// Libraries
+@import "./bootstrap-source/functions";
+@import "./bootstrap-source/bootstrap-grid";
+@import "./bootstrap-source/bootstrap-reboot";
+@import "./bootstrap-source/bootstrap";
+@import "./bootstrap-variables";
+@import "./bootstrap-amendments";
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+
+// Fluid Layout
+@import "./responsive.mobile";
+@import "./responsive.tablet";
+@import "./responsive.desktop";
+
+// Stylesheets
+@import "./preloader";
+@import "./typeography";

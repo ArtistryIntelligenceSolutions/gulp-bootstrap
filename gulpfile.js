@@ -105,13 +105,13 @@ gulp.task("clean:dist", function() {
    ---------------------- */
 gulp.task("build", function(callback) {
   runSequence("clean:dist", 
-    ["pug", "ts", "sass", "useref", "images", "fonts"],
+    ["sass", "pug", "ts", "useref", "images", "fonts"],
     callback
   )
 })
 
 gulp.task("default", function(callback) {
-  runSequence(["pug", "ts", "sass","browserSync", "watch"],
+  runSequence(["sass", "pug", "ts", "browserSync", "watch"],
     callback
   )
 })
