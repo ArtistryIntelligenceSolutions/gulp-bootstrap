@@ -1,0 +1,22 @@
+main {
+    margin-top: 56px;
+}
+
+.back-to-top {
+    cursor: pointer;
+    color: red;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100;
+}
+
+.invisible {
+    transition: opacity 0.5s ease;
+    opacity: 0.0;
+}
+
+.visible {
+    transition: opacity 0.5s ease;
+    opacity: 1.0;
+}

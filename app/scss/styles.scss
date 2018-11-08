@@ -12,6 +12,10 @@
 @import "./bootstrap-amendments";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
+// Sections
+@import "./general";
+@import "./footer";
+
 // Fluid Layout
 @import "./responsive.mobile";
 @import "./responsive.tablet";
@@ -20,3 +24,4 @@
 // Stylesheets
 @import "./preloader";
 @import "./typeography";
+@import "./js-classes";

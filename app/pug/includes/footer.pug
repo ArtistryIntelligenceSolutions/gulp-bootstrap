@@ -1,29 +1,45 @@
-footer.myFooter
-    .container
-        ul
-            li
-                a(href="#") Company Information
-            li
-                a(href="#") Contact us
-            li
-                a(href="#") Reviews
-            li
-                a(href="#") Terms of service
+aside
+    button#scrollTop.btn.btn-light.back-to-top(type="button") ^
+footer.my-footer.background-dark-lighter
+    .container-fluid
+        .row
+            .col-md-3
+                ul
+                    li
+                        a(href="#") Company Information
+            .col-md-3
+                ul
+                    li
+                        a(href="#") Contact us
+            .col-md-3
+                ul
+                    li
+                        a(href="#") Reviews
+            .col-md-3
+                ul
+                    li
+                        a(href="#") Terms of service
     p.footer-copyright © 2016 Copyright Text
-    .footer-social
+    .footer-social.background-dark
         a.social-icons(href="#")
             i.fa.fa-facebook
         a.social-icons(href="#")
             i.fa.fa-google-plus
         a.social-icons(href="#")
             i.fa.fa-twitter
-script(src="js/vendor/modernizr-3.6.0.min.js")
+script(src="js/plugins/ScrollTrigger.min.js" type="text/javascript")
+script.
+    document.addEventListener('DOMContentLoaded', function() {
+        var trigger = new ScrollTrigger();
+    });
+script(src="js/vendor/modernizr-3.6.0.min.js" type="text/javascript")
 script(src="https://code.jquery.com/jquery-3.3.1.min.js", integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=", crossorigin="anonymous")
 script.
     window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
-script(src="js/plugins.js")
-script(src="js/main.js")
-
+script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous" type="text/javascript")
+script(src="js/plugins.js" type="text/javascript")
+script(src="js/bootstrap/index.js" type="text/javascript")
+script(src="js/bootstrap/util.js" type="text/javascript")
 // Google Analytics: change UA-XXXXX-Y to be your site's ID.
 script.
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;

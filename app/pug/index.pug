@@ -5,45 +5,44 @@ doctype html
     <html class="ie9" lang="en">
 html(lang="en")
   head
-    meta(charset="utf-8")
-    meta(http-equiv="x-ua-compatible", content="ie=edge") 
-    title="Gulp Bootstrap"
-    meta(name="description", content="")
-    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
-    link(href="css/styles.css", rel="stylesheet")
-  body 
+    include includes/head
+    include includes/var
+  body
     // if lts IE 9
       <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-    header
-      include includes/nav 
-    main
+    header 
+      include includes/nav
+    aside
+      include includes/preloader
+    main.animate
       article
-        section
-          #carouselExampleIndicators.carousel.slide(data-ride="carousel")
-            ol.carousel-indicators
-              li(data-target="#carouselExampleIndicators" data-slide-to="0" class="active")
-              li(data-target="#carouselExampleIndicators" data-slide-to="1")
-              li(data-target="#carouselExampleIndicators" data-slide-to="2")
-            .carousel-inner(role="listbox")
-              .carousel-item.active(style="background-image: url('http://placehold.it/1900x1080')")
-                .carousel-caption.d-none.d-md-block
-                  h3 First Slide
-                  p This is a description for the first slide.
-              .carousel-item(style="background-image: url('http://placehold.it/1900x1080')")
-                .carousel-caption.d-none.d-md-block
-                  h3 Second Slide
-                  p This is a description for the second slide.
-              .carousel-item(style="background-image: url('http://placehold.it/1900x1080')")
-                carousel-caption.d-none.d-md-block
-                  h3 Third Slide
-                  p This is a description for the third slide.
-            a.carousel-control-prev(href="#carouselExampleIndicators" role="button" data-slide="prev")
-              span.carousel-control-prev-icon(aria-hidden="true")
-              span.sr-only Previous
-            a.carousel-control-next(href="#carouselExampleIndicators" role="button" data-slide="next")
-              span.carousel-control-next-icon(aria-hidden="true")
-              span.sr-only Next
-        section.container
+        section.container-fluid(data-scroll="toggle(.scaleUpIn, .scaleUpOut)")
+          .row
+            #carouselExampleIndicators.carousel.slide(data-ride="carousel")
+              ol.carousel-indicators
+                li(data-target="#carouselExampleIndicators" data-slide-to="0" class="active")
+                li(data-target="#carouselExampleIndicators" data-slide-to="1")
+                li(data-target="#carouselExampleIndicators" data-slide-to="2")
+              .carousel-inner(role="listbox")
+                .carousel-item.active(style="background-image: url('http://placehold.it/1900x1080')")
+                  .carousel-caption.d-none.d-md-block
+                    h3 First Slide
+                    p This is a description for the first slide.
+                .carousel-item(style="background-image: url('http://placehold.it/1900x1080')")
+                  .carousel-caption.d-none.d-md-block
+                    h3 Second Slide
+                    p This is a description for the second slide.
+                .carousel-item(style="background-image: url('http://placehold.it/1900x1080')")
+                  carousel-caption.d-none.d-md-block
+                    h3 Third Slide
+                    p This is a description for the third slide.
+              a.carousel-control-prev(href="#carouselExampleIndicators" role="button" data-slide="prev")
+                span.carousel-control-prev-icon(aria-hidden="true")
+                span.sr-only Previous
+              a.carousel-control-next(href="#carouselExampleIndicators" role="button" data-slide="next")
+                span.carousel-control-next-icon(aria-hidden="true")
+                span.sr-only Next
+        section.container(data-scroll="toggle(.scaleUpIn, .scaleUpOut)")
           h1.my-4 Welcome to Modern Business
           .row
             .col-lg-4.mb-4
@@ -67,7 +66,7 @@ html(lang="en")
                   p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.
                 .card-footer
                   a.btn.btn-primary(href="#") Learn More
-        section.container
+        section.container(data-scroll="toggle(.scaleUpIn, .scaleUpOut)")
           h2 Portfolio Heading
           .row
             .col-lg-4.col-sm-6.portfolio-item
@@ -118,7 +117,7 @@ html(lang="en")
                   h4.card-title
                     a(href="#") Project Six
                   p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque earum nostrum suscipit ducimus nihil provident, perferendis rem illo, voluptate atque, sit eius in voluptates, nemo repellat fugiat excepturi! Nemo, esse.
-        section.container
+        section.container(data-scroll="toggle(.scaleUpIn, .scaleUpOut)")
           .row
             .col-lg-6
               h2 Modern Business Features
@@ -133,7 +132,7 @@ html(lang="en")
               p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.
             .col-lg-6
               img.img-fluid.rounded(src="http://placehold.it/700x450" alt="")
-        section.container
+        section.container(data-scroll="toggle(.scaleUpIn, .scaleUpOut)")
           hr
           .row.mb-4
             .col-md-8
@@ -141,3 +140,6 @@ html(lang="en")
             .col-md-4
               a.btn.btn-lg.btn-secondary.btn-block(href="#") Call to Action
     include includes/footer 
+    script(src="js/bootstrap/carousel.js")
+    script(src="js/main.js")
+    script(src="js/index.js")

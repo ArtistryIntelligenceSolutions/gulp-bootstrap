@@ -11,6 +11,14 @@
   background-color: $offWhite;
 }
 
+.background-dark {
+  background-color: $black;
+}
+
+.background-dark-lighter {
+  background-color: $blackLighter;
+}
+
 .border-color-primary {
   border-color: $primary;
 }
@@ -67,59 +75,50 @@
 }
 
 // Remove Padding
-@mixin no-padding($paddingDirection) {
-  @if $paddingDirection==padding-bottom {
-    padding-bottom: 0;
+.container,
+.container-fluid,
+main {
+  .no-padding {
+    padding: 0;
   }
-
-  @else if $paddingDirection==padding-left {
-    padding-left: 0;
-  }
-
-  @else if $paddingDirection==padding-right {
-    padding-right: 0;
-  }
-
-  @else if $paddingDirection==padding-top {
+  .no-padding-top {
     padding-top: 0;
   }
+  .no-padding-right {
+    padding-right: 0;
+  }
+  .no-padding-bottom {
+    padding-bottom: 0;
+  }
+  .no-padding-left {
+    padding-left: 0;
+  }
 }
-
-// Calling Method
-// .#{$overRideSelectors} {
-//   .no-padding {
-//     @include no-padding(padding-bottom);
-//   }
-// }
 
 // Remove Margin
-@mixin no-gutter($marginDirection) {
-  @if $marginDirection==margin-bottom {
-    margin-bottom: 0;
+.container,
+.container-fluid,
+main {
+  .no-margin {
+    margin: 0;
   }
-
-  @else if $marginDirection==margin-left {
-    margin-left: 0;
+  .no-margin-top {
+    margin-top: 0;
   }
-
-  @else if $marginDirection==margin-right {
+  .no-margin-right {
     margin-right: 0;
   }
-
-  @else if $marginDirection==margin-top {
-    margin-top: 0;
+  .no-margin-bottom {
+    margin-bottom: 0;
+  }
+  .no-margin-left {
+    margin-left: 0;
   }
 }
 
-// Calling Method
-// .#{$overRideSelectors} {
-//   .no-gutter {
-//     @include gutterIf(margin-bottom);
-//   }
-// }
-
 .container,
-.container-fluid {
+.container-fluid,
+main {
   .no-border-radius {
     border-radius: 0;
   }

@@ -1,0 +1,64 @@
+doctype html
+//if IE 8
+    <html class="ie8" lang="en">
+//if IE 9
+    <html class="ie9" lang="en">
+html(lang="en")
+  head
+    include includes/head
+  body 
+    // if lts IE 9
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    header
+      include includes/nav
+    aside
+      include includes/preloader
+    main
+      article
+        .jumbotron.breadcrumb.no-margin.no-border-radius
+          h1.mt-4.mb-3 Contact
+        ol.breadcrumb.no-border-radius
+          li.breadcrumb-item
+            a(href="index.html") Home
+          li.breadcrumb-item.active Contact
+        section.container
+          .row
+            .col-lg-8.mb-4
+              iframe(width="100%" height="400px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?hl=en&amp;ie=UTF8&amp;ll=37.0625,-95.677068&amp;spn=56.506174,79.013672&amp;t=m&amp;z=4&amp;output=embed")
+            .col-lg-4.mb-4
+              h3 Contact Details
+              p 3481 Melrose Place<br>Beverly Hills, CA 90210
+              p
+                <abbr title="Phone">P</abbr>: (123) 456-7890
+              p
+                <abbr title="Email">E</abbr>: a(href="mailto:name@example.com") name@example.com
+              p
+                <abbr title="Hours">H</abbr>: Monday - Friday: 9:00 AM to 5:00 PM
+        section.container
+          .row
+            .col-lg-8.mb-4
+              h3 Send us a Message
+              form#contactForm(name="sentMessage" novalidate)
+                .control-group.form-group
+                  .controls
+                    label Full Name:
+                    input#name.form-control(type="text" required data-validation-required-message="Please enter your name.")
+                    p.help-block
+                .control-group.form-group
+                  .controls
+                    label Phone Number:
+                    input#phone.form-control(type="tel" required data-validation-required-message="Please enter your phone number.")
+                .control-group.form-group
+                  .controls
+                    label Email Address:
+                    input#email.form-control(type="email" required data-validation-required-message="Please enter your email address.")
+                .control-group.form-group
+                  .controls
+                    label Message:
+                    textarea#message.form-control(rows="10" cols="100" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none")
+                #success
+                button#sendMessageButton.btn.btn-primary(type="submit") Send Message
+    include includes/footer
+    script(src="js/jqBootstrapValidation.js")
+    script(src="js/contact_me.js")
+    script(src="js/index.js")

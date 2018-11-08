@@ -1,5 +1,7 @@
 // Color
 $offWhite: darken(white, 10%);
+$black: #333;
+$blackLighter: #444;
 $blue: #007bff !default;
 $indigo: #6610f2 !default;
 $purple: #6f42c1 !default;
@@ -26,3 +28,6 @@ $paddingLg: 50px;
 
 // Selectors Override Rules
 $overRideSelectors: "container,container-fluid";
+
+// Force
+$nb: !important;

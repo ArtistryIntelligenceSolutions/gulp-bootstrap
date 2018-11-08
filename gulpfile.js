@@ -41,7 +41,9 @@ gulp.task("pug", function buildHTML() {
    
 gulp.task("sass", function(){
   return gulp.src("app/scss/**/*.scss")
-    .pipe(sass()) 
+    .pipe(sass({
+      outputStyle: "compressed"
+    }))
     .pipe(gulp.dest("app/css"))
     .pipe(browserSync.reload({
       stream: true
@@ -51,8 +53,7 @@ gulp.task("sass", function(){
 gulp.task("ts",function() {
   return gulp.src("app/ts/**/*.ts")
     .pipe(ts({
-        noImplicitAny: true,
-        outFile: "main.js"
+        noImplicitAny: true
     }))
     .pipe(gulp.dest("app/js"))
 });

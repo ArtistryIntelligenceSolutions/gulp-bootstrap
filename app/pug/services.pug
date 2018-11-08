@@ -1,0 +1,48 @@
+doctype html
+//if IE 8
+    <html class="ie8" lang="en">
+//if IE 9
+    <html class="ie9" lang="en">
+html(lang="en")
+  head
+    include includes/head
+  body 
+    // if lts IE 9
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+    header
+      include includes/nav
+    aside
+      include includes/preloader
+    main
+      article
+        .jumbotron.breadcrumb.no-margin.no-border-radius
+          h1.mt-4.mb-3 Services
+        ol.breadcrumb.no-border-radius
+          li.breadcrumb-item
+            a(href="index.html") Home
+          li.breadcrumb-item.active Services
+        section.container
+          .row
+            .col-lg-4.mb-4
+              .card.h-100
+                h4.card-header Card Title
+                .card-body
+                  p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.
+                .card-footer
+                  a(href="#").btn.btn-primary Learn More
+            .col-lg-4.mb-4
+              .card.h-100
+                h4.card-header Card Title
+                .card-body
+                  p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.
+                .card-footer
+                  a(href="#").btn.btn-primary Learn More
+            .col-lg-4.mb-4
+              .card.h-100
+                h4.card-header Card Title
+                .card-body
+                  p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.
+                .card-footer
+                  a(href="#").btn.btn-primary Learn More
+    include includes/footer 
+    script(src="js/index.js")
