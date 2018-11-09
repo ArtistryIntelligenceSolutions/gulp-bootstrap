@@ -11,11 +11,13 @@
 @import "./bootstrap-source/bootstrap";
 @import "./bootstrap/bootstrap-variables";
 @import "./bootstrap/bootstrap-amendments";
+@import "./perfundo/perfundo";
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
 // Sections
-@import "./general";
 @import "./footer";
+@import "./general";
+@import "./nav";
 
 // Fluid Layout
 @import "./responsive.mobile";

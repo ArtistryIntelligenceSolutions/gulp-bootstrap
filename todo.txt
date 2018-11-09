@@ -1,5 +1,0 @@
-Todo
-
- > fix js file order
- > scrolling up on scroll trigger hides elements to early
- > hide scroll to top btn when at top of the page

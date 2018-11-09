@@ -1,0 +1,28 @@
+.nav-parent {
+    .fixed-top {
+        top: 50px;
+    }
+}
+
+$toolbarHeight: 50px;
+.toolbar {
+    background-color: $offWhite;
+    height: $toolbarHeight;
+    .row {
+        display: block;
+    }
+    div {
+        height: $toolbarHeight;
+        line-height: $toolbarHeight;
+    }
+    .toolbar-children {
+        clear: none;
+        padding: 0 10px;
+        &:first-child {
+            float: left;
+        }
+        &:last-child {
+            float: right;
+        }
+    }
+}

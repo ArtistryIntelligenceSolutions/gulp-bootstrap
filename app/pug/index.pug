@@ -69,9 +69,19 @@ html(lang="en")
         section.container
           h2 Portfolio Heading
           .row(data-scroll=scrollTrigger.fromTop)
+            .col-lg-12.portfolio-item.perfundo
+              a.perfundo__link(href="#perfundo-single2")
+                img.card-img-top(src="http://placekitten.com/g/700/400" alt="Demo image")
+          #perfundo-single2.perfundo__overlay.fadeInLeft
+            figure.perfundo__content.perfundo__figure
+              img(src="http://placekitten.com/g/700/400" alt="Demo image")
+              .perfundo__image(style="width: 800px; padding-top: 56.25%; background-image: url(http://placekitten.com/g/700/400);")
+              figcaption.perfundo__figcaption Single image with caption
+            a.perfundo__close.perfundo__control(href="#perfundo-untarget") Close
+          .row(data-scroll=scrollTrigger.fromTop)
             .col-lg-4.col-sm-6.portfolio-item
               .card.h-100
-                a(href="#")
+                a.perfundo(href="http://placehold.it/700x400")
                   img.card-img-top(src="http://placehold.it/700x400" alt="")
                 .card-body
                   h4.card-title
@@ -79,7 +89,7 @@ html(lang="en")
                   p.card-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet numquam aspernatur eum quasi sapiente nesciunt? Voluptatibus sit, repellat sequi itaque deserunt, dolores in, nesciunt, illum tempora ex quae? Nihil, dolorem!
             .col-lg-4.col-sm-6.portfolio-item
               .card.h-100
-                a(href="#")
+                a.perfundo(href="http://placehold.it/700x400")
                   img.card-img-top(src="http://placehold.it/700x400" alt="")
                 .card-body
                   h4.card-title
@@ -87,7 +97,7 @@ html(lang="en")
                   p.card-text Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.
             .col-lg-4.col-sm-6.portfolio-item
               .card.h-100
-                a(href="#")
+                a.perfundo(href="http://placehold.it/700x400")
                   img.card-img-top(src="http://placehold.it/700x400" alt="")
                 .card-body
                   h4.card-title
