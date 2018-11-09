@@ -43,7 +43,11 @@ html(lang="en")
                 span.carousel-control-next-icon(aria-hidden="true")
                 span.sr-only Next
         section.container
-          h1.my-4 Welcome to Modern Business
+          h1.my-4 Welcome to #{client.companyName}
+          hr
+          h3 Our Contact Details
+          p Compnay Email: #{client.companyEmail}
+          p Company Landline: #{client.companyPhoneNumber}
           .row
             .col-lg-4.mb-4
               .card.h-100
