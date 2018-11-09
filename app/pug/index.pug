@@ -37,7 +37,7 @@ html(lang="en")
                 span.carousel-control-next-icon(aria-hidden="true")
                 span.sr-only Next
         section.container
-          .row
+          .row(data-scroll=scrollTrigger.fromTop)
             .col-md-12
               h1.my-4 Welcome to #{client.companyName}
               hr
