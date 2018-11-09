@@ -1,4 +1,4 @@
-function ts(param) {
-    console.log(param);
-}
-ts("typescript is running");
+
+    $("#carouselExampleIndicators").carousel({
+        interval: 5000
+});

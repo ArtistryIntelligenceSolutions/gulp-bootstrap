@@ -1,3 +1,4 @@
+
 var preloader = document.getElementById("preloader");
 var fadeIn = document.getElementsByClassName("fadeIn");
 var section = document.getElementsByTagName("section");
