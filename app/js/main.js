@@ -2,6 +2,15 @@ $("#carouselExampleIndicators").carousel({
     interval: 5000
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  var trigger = new ScrollTrigger();
+});
+
+var lightbox = GLightbox();
+var lightboxDescription = GLightbox({
+    selector: 'glightboxTest'
+});
+
 // Load the module.
 const perfundo = require('perfundo');
 // Initialize a perfundo Lightbox.
